@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="afterlight"
+version="1.0.0"
+displayName="Afterlight"
+description='''The world is quiet. That does not mean it is empty.'''
+authors="senyakudr2000-prog"
+
+[[dependencies.afterlight]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.172,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.afterlight]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.22)"
+ordering="NONE"
+side="BOTH"
