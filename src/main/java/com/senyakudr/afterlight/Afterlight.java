@@ -60,11 +60,11 @@ public final class Afterlight {
 
         if (kind == 0) {
             serverLevel.sendParticles(ParticleTypes.SMOKE, x, y, z, 12, 0.35, 0.5, 0.35, 0.01);
-            serverLevel.playSound(null, soundPos, SoundEvents.AMBIENT_CAVE,
+            serverLevel.playSound(null, soundPos, SoundEvents.AMBIENT_CAVE.value(),
                     SoundSource.AMBIENT, 0.8F, 0.65F + random.nextFloat() * 0.2F);
         } else if (kind == 1) {
             serverLevel.sendParticles(ParticleTypes.PORTAL, x, y + 0.5, z, 24, 0.45, 0.8, 0.45, 0.05);
-            serverLevel.playSound(null, soundPos, SoundEvents.AMBIENT_CAVE,
+            serverLevel.playSound(null, soundPos, SoundEvents.AMBIENT_CAVE.value(),
                     SoundSource.AMBIENT, 0.55F, 1.4F);
         } else {
             double behindX = player.getX() - player.getLookAngle().x * 2.0;
